@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/index.js"></script>
+    <title>Quiz</title>
+
+    <title>World countries</title>
+   
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 style="text-align:center">World countries statistics</h1>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control searchString"  placeholder="Enter Country or letter sequence here..">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <button type="button" class="btn btn-primary searchBtn mr-3" >Search</button>
+                        <button type="button" class="btn btn-secondary getAllBtn mr-3">Get All Countries</button>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+ 
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        
+        <div id="root">
+            <!-- Dynamic content -->
+            
+            <!-- <span id="totalCountries"></span><br>
+            <span id="totalPopulation"></span><br>
+            <span id="averagePopulation"></span><br> -->
+            
+            <p>Your Querry Statistics</p>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col"><span id="totalCountries"></span></th>
+                    <th scope="col"><span id="totalPopulation"></span></th>
+                    <th scope="col"><span id="averagePopulation"></span></th>    
+                </tr>
+                </thead>
+            </table>
+
+
+            <!-- Table-1 Countries data -->
+            <p>Countries Table Statistics</p>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Country Name</th>
+                    <th scope="col">Number of citizens</th>
+                </tr>
+                </thead>
+                <tbody id="countriesTable">
+                <!-- Here we render countries table elements -->
+                </tbody>
+            </table>
+
+            <!-- Table-2 Region data -->
+            <p>Region Table Statistics</p>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Region</th>
+                    <th scope="col">Number of countries</th>
+                </tr>
+                </thead>
+                <tbody id="regionTable">
+                <!-- Here we render region table tr elements -->
+                </tbody>
+            </table>
+
+            <!-- Table-3 Currencies (Bonus) -->
+            <p>Currencies Table Statistics</p>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Number of countries using it</th>
+                </tr>
+                </thead>
+                <tbody id="currencyTable">
+                <!-- Here we render region table tr elements -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
