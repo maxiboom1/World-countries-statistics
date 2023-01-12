@@ -139,7 +139,6 @@ function currencyCalc(countries){
     for(let i=0; i<countries.length; i++){
         
         const currencyObj = countries[i].currencies; // Sub-object it first
-        console.log(currencyObj);
         if(currencyObj == undefined){continue;} // In Antartica no currency - so handle the undefine and skip.
     
         // We use it because we don't know currency key name - so using 'values' method we can traverse object like it was array
