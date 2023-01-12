@@ -143,6 +143,7 @@ function currencyCalc(countries){
     
         // We use it because we don't know currency key name - so using 'values' method we can traverse object like it was array
         const key = Object.values(currencyObj)[0].name; 
+        console.log(Object.values('Number of currencies in ' + countries[i].name.common + ': ' + currencyObj).length); // DEBUG
           
         if(typeof resultData[key] == 'undefined'){
             resultData[key] = 1;
